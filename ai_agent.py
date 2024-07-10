@@ -54,7 +54,7 @@ task = Task(
 task2 = Task(
     description = f"""Read text: {text1} and {text2}, and use the model from agent 'Reader' to populate the sub-chapters with answers.
     You need to respect the model by 'Reader' and you need to add the chapters and answers according to what you find in the documents.""",
-    agent = reader,
+    agent = reader2,
     expected_output = "Write in Romanian language.A report"
 )
 
@@ -76,7 +76,7 @@ Creati raportul cu urmatoarea structura:
     
     
     In rest, foloseste rezultatele agentilor 'Analyzer' si 'Reader' pentru a respecta structura documentelor analizate.""",
-    agent = reader,
+    agent = expert,
     expected_output = "Write in Romanian language.A full report of the offer"
 )
 
